@@ -5,9 +5,21 @@ function addLocation(text, target) {
     target.appendChild(new Option(text));
 }
 function Park(parkObject){
-    const e = document.createElement("div");
-    e.innerHTML = parkObject.LocationName;
+    const e = document.createElement("pre");
+    e.innerHTML = `
+        LocationID: "${parkObject.LocationID}",
+        LocationName: "${parkObject.LocaionName}",
+        Address: "${parkObject.Address}",
+        City: "${parkObject.City}",
+        State: "${parkObject.State}",
+        ZipCode: "${parkObject.ZipCode}",
+        Phone: "${parkObject.Phone}",
+        Fax: "${parkObject.Fax}",
+        Latitude: "${parkObject.Latitude}",
+        Longitude: "${parkObject.Longitude},
+    `;
     return e;
+
 }
 function renderParks(){
     const results = document.getElementById("results");
@@ -28,7 +40,7 @@ function renderParks(){
 }
 function onContent() {
     const parkTypeSelect = document.getElementById("parkTypeSelect");
-    const parkLocationSelect = document.createElementById("parkLocationSelect");
+    const parkLocationSelect = document.getElementById("parkLocationSelect");
     const results = document.getElementById("results");
     parkTypesArray.forEach(parkTypeName => addPark(parkTypeName, parkTypeSelect));
     locationsArray.forEach(parkLocationName => addLocation(parkLocationName, parkLocationSelect))
