@@ -2,23 +2,45 @@
     margin: 0;
     padding: 0;
 }
-body {
-     background-color: skyblue;
-     color: darkolivegreen;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#homeBody {
+     background-color: black;
+     color: whitesmoke;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 nav a{
     display: inline-block;
-    background-color: saddlebrown;
-    color: goldenrod;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: whitesmoke;
     margin-right: 1px;
     padding: 0.5rem;
 }
-nav a.selected{
-    background-color: brown;
-    color:gold;
+.navbar-brand{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-nav {
-    background-color: black;
+.nav-link {
+    color: whitesmoke;
 }
+.form-select{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#container {
+     background-image: url("image/walking.jpg");
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100vh;
+}
+.homePage {
+    text-align: center;
+    background-image: url('walking.jpeg');
+    padding: 100px 0;
+}
+.homePageTitle {
+    font-size: 3rem;
+}
+.homePageSub {
+    font-size: 1.5rem;
+}
+
