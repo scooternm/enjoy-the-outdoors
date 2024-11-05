@@ -33,7 +33,7 @@
                     MORE...
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">EXPLORE</a></li>
+                    <li><a class="nav-link" href="explore.html">EXPLORE</a></li>
                   </ul>
                 </li>
               </ul>
@@ -48,10 +48,11 @@
 <body id="homeBody">
     <main>
         <h1>Home</h1>
-        <div id="container">
+        <div id="containers">
             <div class="homePage">
                 <span class="homePageSub">Connecting you to nature</span>
-                <h2 class="homePageTitle">Parks & Mountains</h2>            </div>
+                <h2 class="homePageTitle">Parks & Mountains</h2>            
+              </div>
                     <div class="homePageNav">
             <div class="container">
                 <div class="d-md-flex">
@@ -68,6 +69,31 @@
             </div>
             </div>
         </div>
+            <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/walking.jpg" class="walking" alt="walking">
+          </div>
+          <div class="carousel-item">
+            <img src="./data/images/EOsceola-StoryImg_2.jpg" class="eosceola" alt="eosceola">
+          </div>
+          <div class="carousel-item">
+            <img src="./data/images/Lafayette-StoryImage_2.jpg" class="Lafayette-StoryImage_2" alt="Lafayette-StoryImage_2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <div id="home-nav">
+          <a href="mountains.html"><img src="./data/images/Adams-StoryImage_2.jpg" alt="mountain">Mountains</a>
+          <a href="./parks.html"><img src="./data/images/Zeacliff-StoryImg_2.jpg" alt="parks">Parks</a>
+      </div>
     </main>
     <footer>
         Copyright 2024 &copy;

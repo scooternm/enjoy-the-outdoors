@@ -11,7 +11,7 @@
 nav a{
     display: inline-block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: whitesmoke;
+    color: black;
     margin-right: 1px;
     padding: 0.5rem;
 }
@@ -24,23 +24,37 @@ nav a{
 .form-select{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#container {
-     background-image: url("image/walking.jpg");
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
-     width: 100%;
-     height: 100vh;
+#containers {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
 }
 .homePage {
     text-align: center;
-    background-image: url('walking.jpeg');
     padding: 100px 0;
+    background-image: url(../image/walking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .homePageTitle {
     font-size: 3rem;
 }
 .homePageSub {
     font-size: 1.5rem;
+}
+.carousel {
+    margin:auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    */
+}
+.carousel-inner img {
+    object-fit: cover;
+}
+.filters{
+    margin: 10px;
+    padding: 10rem;
 }
 
