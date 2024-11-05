@@ -50,8 +50,8 @@ function onContent() {
     renderParks();
 
     filterButton.addEventListener("click", renderParks);
-    parkTypeSelect.addEventListener("change", renderParks);
-    parkLocationSelect.addEventListener("change", renderParks);
+    // parkTypeSelect.addEventListener("change", renderParks);
+    // parkLocationSelect.addEventListener("change", renderParks);
 }
 
 document.addEventListener("DOMContentLoaded", onContent);
