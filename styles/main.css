@@ -92,7 +92,7 @@ h3{
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
-    transform: translateY(-30px)
+    transform: translateY(-300px)
 }
 .card img{
     height: 100%;
@@ -105,4 +105,8 @@ h2{
 h4{
     text-align: center;
     transform: translateY(-300px);
+}
+.image-container{
+    display: flex;
+    justify-content: center;
 }
