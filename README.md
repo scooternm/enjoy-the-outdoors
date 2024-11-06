@@ -1,4 +1,7 @@
 ## PARKS & MOUNTAINS
 
 ## MOUNTAIN INFO PAGE
-![HOME](images/mountains.png)
+![HOME](image/mountain.png)
+
+## home page
+![HOME](image/etohome.png)
