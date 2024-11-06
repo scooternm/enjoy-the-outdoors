@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if(m.img){
                 const i = document.createElement("img");
                 i.alt = "Mountain Image";
-                i.src = "data/images" + m.img;
+                i.src = "data/images/" + m.img;
                 results.appendChild(i);
             }
             
