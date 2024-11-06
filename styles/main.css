@@ -7,7 +7,6 @@
      color: whitesmoke;
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 nav a{
     display: inline-block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -25,7 +24,7 @@ nav a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #containers {
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     width: 100%;
     height: 100vh;
@@ -45,10 +44,15 @@ nav a{
 }
 .carousel {
     margin:auto;
+    width: 550px;
     /* display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;    */
+}
+.carousel-item{
+    width: 500px;
+    margin: auto;
 }
 .carousel-inner img {
     object-fit: cover;
@@ -57,4 +61,48 @@ nav a{
     margin: 10px;
     padding: 10rem;
 }
+h1{
+    margin: 100px;
+    padding: 50px;
+    text-align: center;
+}
+h3{
+    margin: 100px;
+    text-align: center;
+}
+.cardTexts{
+    transform: translateY(2px);
+    height: 100vh;
+    display: inline-block;
+    
+}
+.passconoway{
+    width: 40rem;
+    height: 14rem;
+}
+.card-text{
+    color: darkgoldenrod;
 
+}
+.card-text2{
+    color: darkgoldenrod;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    transform: translateY(-30px)
+}
+.card img{
+    height: 100%;
+    object-fit: cover;
+}
+h2{
+    text-align: center;
+    transform: translateY(-400px);
+}
+h4{
+    text-align: center;
+    transform: translateY(-300px);
+}
