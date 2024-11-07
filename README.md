@@ -16,6 +16,10 @@ navigation bar added using bootstrap
 ## NAVI BAR
 ![nav](image/navi.png)
 
+## JavaScript code snippet
+updated function used to create bootsrap cards around park info
+![js](image/jssnippet.png)
+
 
 
 
