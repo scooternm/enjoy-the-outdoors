@@ -5,20 +5,33 @@ function addLocation(text, target) {
     target.appendChild(new Option(text));
 }
 function Park(parkObject){
-    const e = document.createElement("pre");
-    e.innerHTML = `
-        LocationID: "${parkObject.LocationID}",
-        LocationName: "${parkObject.LocationName}",
-        Address: "${parkObject.Address}",
-        City: "${parkObject.City}",
-        State: "${parkObject.State}",
-        ZipCode: "${parkObject.ZipCode}",
-        Phone: "${parkObject.Phone}",
-        Fax: "${parkObject.Fax}",
-        Latitude: "${parkObject.Latitude}",
-        Longitude: "${parkObject.Longitude}",
+    const card = document.createElement("div");
+    card.classList.add("card", "mb-4");
+    
+    const cardBody = document.createElement("div")
+    cardBody.classList.add("card-body");
+
+    const cardTitle = document.createElement("h5");
+    cardTitle.classList.add("card-title");
+    cardTitle.textContent = parkObject.LocationName;
+
+    const cardText = document.createElement("p");
+    cardText.classList.add("card-text");
+    cardText.innerHTML = `
+        <strong>Address:</strong> ${parkObject.Address}<br>
+        <strong>City:</strong> ${parkObject.City}, ${parkObject.State}<br>
+        <strong>Zip Code:</strong> ${parkObject.ZipCode}<br>
+        <strong>Phone:</strong> ${parkObject.Phone}<br>
+        <strong>Fax:</strong> ${parkObject.Fax}<br>
+        <strong>Coordinates:</strong> ${parkObject.Latitude}, ${parkObject.Longitude}
     `;
-    return e;
+
+    cardBody.appendChild(cardTitle);
+    cardBody.appendChild(cardText);
+
+    card.appendChild(cardBody);
+    return card;
+
 
 }
 function renderParks(){
@@ -33,7 +46,11 @@ function renderParks(){
     if(selectedLocation){
         filtered = filtered.filter(p=>p.State.toLowerCase() === selectedLocation.toLowerCase())
     }
-    filtered.forEach( p => results.appendChild(Park(p)));
+    filtered.forEach( p => {
+        const card = Park(p);
+        results.appendChild(card);
+    });
+    
     if(filtered.length < 1){
         results.innerHTML = "No results found matching the filter.";
     }
