@@ -7,3 +7,15 @@ Mountain page gives information on mountains across the country. Gives info on e
 home page includes bootstrap carousel and cards, navigation bar, and links to other existing pages.
 ## home page
 ![home](image/etohome.png)
+
+Parks page has functional filter button and added bootstrap cards for clealry displaying info. Addition of bootstrap is a piece of unique code I added
+## PARKS PAGE
+![parks](image/parks.png)
+
+navigation bar added using bootstrap
+## NAVI BAR
+![nav](image/navi.png)
+
+
+
+
